@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Invitación de boda de Ale & Leo - 4 de diciembre de 2026" />
+  <title>Ale & Leo | 04.12.2026</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- =========================================================
+       PORTADA
+  ========================================================== -->
+  <header class="hero" id="inicio">
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content reveal">
+      <p class="hero__eyebrow">Nos casamos</p>
+      <h1 id="coupleNames">Ale & Leo</h1>
+      <p class="hero__date" id="heroDate">04 • 12 • 2026</p>
+
+      <div class="countdown" id="countdown">
+        <div class="countdown__item">
+          <span id="days">00</span>
+          <small>Días</small>
+        </div>
+        <div class="countdown__separator">:</div>
+
+        <div class="countdown__item">
+          <span id="hours">00</span>
+          <small>Horas</small>
+        </div>
+        <div class="countdown__separator">:</div>
+
+        <div class="countdown__item">
+          <span id="minutes">00</span>
+          <small>Min</small>
+        </div>
+        <div class="countdown__separator">:</div>
+
+        <div class="countdown__item">
+          <span id="seconds">00</span>
+          <small>Seg</small>
+        </div>
+      </div>
+    </div>
+
+    <a href="#ubicacion" class="scroll-indicator" aria-label="Ir a la siguiente sección">
+      <span></span>
+    </a>
+  </header>
+
+  <main>
+
+    <!-- =========================================================
+         INTRO
+    ========================================================== -->
+    <section class="intro section">
+      <div class="container reveal">
+        <span class="ornament">❧</span>
+        <h2>Un día para recordar</h2>
+        <p>
+          Queremos compartir contigo uno de los momentos más especiales
+          de nuestra historia.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         UBICACIÓN Y HORARIO
+    ========================================================== -->
+    <section class="location section" id="ubicacion">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-heading__small">Celebra con nosotros</p>
+          <h2>Nuestra Boda</h2>
+          <div class="section-heading__line"></div>
+        </div>
+
+        <div class="event-card reveal">
+
+          <div class="event-date">
+            <span class="event-date__month">DIC</span>
+            <span class="event-date__day">04</span>
+            <span class="event-date__year">2026</span>
+          </div>
+
+          <div class="event-info">
+            <h3 id="eventDay">Viernes</h3>
+            <p class="event-time" id="eventTime">Hora: 5:00 PM</p>
+            <p class="event-place" id="eventPlace">Margó, Muxbal</p>
+            <p class="event-address" id="eventAddress">
+              Antigua, Carretera a El Salvador, San Jorge Muxbal
+            </p>
+
+            <div class="map-buttons">
+              <a id="mapsButton" href="#" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+                Google Maps
+              </a>
+
+              <a id="wazeButton" href="#" target="_blank" rel="noopener noreferrer" class="btn btn--outline">
+                Waze
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         DRESS CODE
+    ========================================================== -->
+    <section class="dress section" id="dress-code">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <p class="section-heading__small">Para nuestro día especial</p>
+          <h2>Dress Code</h2>
+          <div class="section-heading__line"></div>
+          <p class="section-heading__description">
+            Queremos verte increíble celebrando junto a nosotros.
+          </p>
+        </div>
+
+        <div class="dress-grid">
+
+          <article class="dress-card reveal">
+            <div class="dress-card__image">
+              <img src="imagenes/dress-mujer.jpg" alt="Referencia de vestimenta para mujeres">
+            </div>
+
+            <div class="dress-card__content">
+              <span class="dress-card__number">01</span>
+              <h3>Mujeres</h3>
+              <p id="womenDress">
+                Vestido formal o semi formal en tonos dentro de la paleta sugerida.
+              </p>
+            </div>
+          </article>
+
+          <article class="dress-card reveal">
+            <div class="dress-card__image">
+              <img src="imagenes/dress-hombre.jpg" alt="Referencia de vestimenta para hombres">
+            </div>
+
+            <div class="dress-card__content">
+              <span class="dress-card__number">02</span>
+              <h3>Hombres</h3>
+              <p id="menDress">
+                Traje formal o semi formal combinando tonos neutros y verdes.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+
+        <!-- PALETA -->
+        <div class="palette reveal">
+          <h3>Paleta de colores</h3>
+          <p>Estos tonos pueden servirte de inspiración.</p>
+
+          <div class="palette__colors" id="colorPalette"></div>
+
+          <p class="palette__note" id="paletteNote">
+            Por favor evita utilizar blanco o tonos demasiado similares al vestido de la novia.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         REGALOS
+    ========================================================== -->
+    <section class="gifts section" id="regalos">
+      <div class="container">
+
+        <div class="gift-wrapper reveal">
+
+          <div class="gift-decoration">
+            <span>A & L</span>
+          </div>
+
+          <div class="gift-content">
+            <p class="section-heading__small">Con cariño</p>
+            <h2>Regalos</h2>
+
+            <p class="gift-message">
+              Tu presencia en nuestro día especial es nuestro mejor regalo.
+              Si deseas tener un detalle con nosotros, hemos preparado la siguiente opción.
+            </p>
+
+            <div class="bank-card">
+              <p class="bank-card__label">Transferencia bancaria</p>
+
+              <div class="bank-row">
+                <span>Banco</span>
+                <strong id="bankName">[BANCO]</strong>
+              </div>
+
+              <div class="bank-row">
+                <span>Nombre</span>
+                <strong id="bankHolder">[NOMBRE]</strong>
+              </div>
+
+              <div class="bank-row">
+                <span>Cuenta</span>
+                <strong id="bankAccount">[NÚMERO DE CUENTA]</strong>
+              </div>
+
+              <div class="bank-row">
+                <span>Tipo</span>
+                <strong id="bankType">[TIPO DE CUENTA]</strong>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================
+       FOTO FINAL
+  ========================================================== -->
+  <footer class="final-photo">
+    <div class="final-photo__overlay"></div>
+
+    <div class="final-photo__content reveal">
+      <h2 id="initials">A & L</h2>
+      <p>04 • 12 • 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
